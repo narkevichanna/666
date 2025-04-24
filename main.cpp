@@ -1,5 +1,5 @@
-#include"TXLib.h"
 #include <iostream>
+#include"TXLib.h"
 #include <string>
 #include <sstream>
 using namespace std;
@@ -49,22 +49,10 @@ public:
         }
     }
 };
-class Monetka{
-public:
-    int x,y;
-    HDC image = txLoadImage("монетка.bmp");
-    Monetka(int x,int y){
-    this ->x=x;
-    this ->y =y;
-    }
-    void draw(){
-        txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
-    }
-};
 class Car{
 public:
     int x, y;
-    HDC image = txLoadImage("основнмаш.bmp");
+    HDC image = txLoadImage("основнмашина.bmp");
     Car (int x,int y){
     this ->x=x;
     this ->y =y;
@@ -77,14 +65,14 @@ public:
         if(GetAsyncKeyState('A')){
             x -= 3;
         }
-        if (x < 200) {
-                x = 200;
+        if (x < 240) {
+                x = 240;
             }
         if(GetAsyncKeyState('D')){
             x += 3;
         }
-        if (x > 680) {
-                x = 680;
+        if (x > 668) {
+                x = 668;
             }
         if(GetAsyncKeyState('S')){
             y += 3;
@@ -101,16 +89,18 @@ public:
 
     }
 };
+
 class Enemy{
 public:
     int x, y;
-    HDC image = txLoadImage("кр.bmp");
-    Enemy(int x,int y){
+    int image_flag;
+    HDC image1 = txLoadImage("кр.bmp");
+    Enemy (int x,int y){
     this ->x=x;
     this ->y =y;
     }
     void draw(){
-        txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+        txTransparentBlt(txDC(),x,y,0,0, image1 ,0,0, TX_WHITE);
     }
 
     void moved(){
@@ -118,16 +108,31 @@ public:
 
     }
 };
+class Monetka{
+public:
+    int x,y;
+    HDC image = txLoadImage("монетка.bmp");
+    Monetka(int x,int y){
+    this ->x=x;
+    this ->y =y;
+    }
+    void draw(){
+        txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+    }
+};
 class Game{
 public:
     int scene = 0;
     BackGround bg = BackGround(-300,0);
-    Car car= Car(450,600);
+    Car car= Car(460,650);
     double double_timer = 0;
-    int coin_timer[2];
     int int_timer;
+    int int_cointimer = 0;
+    int int_lifetimer = 3;
     Enemy *pro[2];
     bool catch_coin[2];
+    int coin_timer[2];
+
     Monetka *coin[2];
     Menu menu;
     void check(){
@@ -140,7 +145,7 @@ public:
     for(int i = 0; i < 2; i++){
         pro[i] = new Enemy ((rand() % (600- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i), (rand() % (1200 - 1100 + 1)+ 1100));
     }
-    for (int i =0; i < 2; i++){
+     for (int i =0; i < 2; i++){
         coin[i] = new Monetka ((rand() % (600- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i), (rand() % (600 - 50 + 1)+ 50));
         catch_coin[i] = false;
         coin_timer[i] = 300;
@@ -156,7 +161,28 @@ public:
         if (scene == 1){
         txBegin();
         txClear();
+        bg.draw();
         double_timer += 0.01;
+        //
+        int_timer = double_timer;
+        ostringstream str1;
+        str1 << int_timer;
+        string str_timer = str1.str();
+        const char* char_timer = str_timer.c_str();
+        txTextOut(130, 55, char_timer);
+        //
+        ostringstream str2;
+        str2 << int_cointimer;
+        string str_cointimer = str2.str();
+        const char* char_cointimer = str_cointimer.c_str();
+        txTextOut(130, 90, char_cointimer);
+        //
+        ostringstream str3;
+        str3 << int_lifetimer;
+        string str_lifetimer = str3.str();
+        const char* char_lifetimer = str_lifetimer.c_str();
+        txTextOut(850, 55, char_lifetimer);
+        //
         for(int i = 0; i < 2; i ++){
             if (catch_coin[i]){
                 coin_timer[i] -= 1;
@@ -165,13 +191,6 @@ public:
                     coin_timer[i] = 0;
                 }
         }
-        int_timer = double_timer;
-        bg.draw();
-        ostringstream str1;
-        str1 << int_timer;
-        string str_timer = str1.str();
-        const char* char_timer = str_timer.c_str();
-        txTextOut(130, 50, char_timer);
         bg.moved();
         car.draw();
         car.moved();
@@ -180,25 +199,22 @@ public:
             if ((coin[i]->x - (car.x+50))*(coin[i]->x - (car.x+50))+(coin[i]->y - (car.y+100))*(coin[i]->y - (car.y+100)) <= 12000){
                     coin[i]->y = (rand() % (10000 - 1200 +1)+ 1200);
                     coin[i]->x = (rand() % (400- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
-                catch_coin[i] = true;
+                    catch_coin[i] = true;
+                    int_cointimer += 1;
             }
             if (catch_coin[i]){
                 if (coin_timer[i] == 0){
-                    //cout << "1" << " ";
                     coin[i]->y = (rand() % (600 - 50 +1)+ 50);
                     coin[i]->x = (rand() % (400- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
                     catch_coin[i] = false;
                     coin_timer[i] = 200;
                 }
             }
-            /*if (catch_coin[i] == false){
-                int_timer = catch_coin;
-                txTextOut(130, 50, timer);
-            }*/
         }
         for(int i = 0; i < 2; i++){
             pro[i]->draw();
             pro[i]->moved();
+
             if(pro[i]->y <= -50){
                 pro[i]->y = (rand() % (1300 - 1000 +1)+ 1000);
                 pro[i]->x = (rand() % (500- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
@@ -206,11 +222,12 @@ public:
             if(car.x >= pro[i]->x - 100 && car.x <= pro[i]->x + 100 && car.y <= pro[i]->y + 240 && car.y >= pro[i]->y - 240){
                 pro[i]->y = (rand() % (1300 - 1000 +1)+ 1000);
                 pro[i]->x = (rand() % (500- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
-                double_timer = 0;
+                int_lifetimer -= 1;
             }
-            if (double_timer ==0){
-                scene=0 ;
-            }
+        }
+        if(int_lifetimer == 0){
+            scene = 0;
+
         }
         txEnd();
         }
