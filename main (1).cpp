@@ -21,12 +21,6 @@ public:
     HDC image = txLoadImage("заново.bmp");
     void draw() {
     txBitBlt(txDC(), 0, 0, 1000, 900, image, 0, 0);
-    txSetColor(TX_BLACK,7);
-    txSetFillColor(RGB(105, 105, 105));
-    txRectangle(390, 470, 650, 540);
-    txSetColor(TX_BLACK);
-    txTextOut(460, 470, "Start");
-    txSelectFont("Comic Sans MS", 60);
     }
 };
 class BackGround{
@@ -151,6 +145,8 @@ public:
     Monetka *coin[2];
     Menu menu;
     Menu2 menu2;
+    double double_deathtimer = 3;
+    int int_deathtimer;
     void check(){
     if (txMouseX() >= 390 && txMouseX() <= 650 && txMouseY() >= 470 && txMouseY() <= 540 && txMouseButtons()==1 ){
         scene = 1;
@@ -247,10 +243,23 @@ public:
             int_cointimer = 0;
             int_lifetimer = 3;
         }
-        if (scene ==2){
-            menu2.draw();
-        }
         txEnd();
+        }
+        if (scene == 2){
+            txClear();
+            menu2.draw();
+            int_deathtimer = double_deathtimer;
+            ostringstream str4;
+            str4 << int_deathtimer;
+            string str_deathtimer = str4.str();
+            const char* char_deathtimer = str_deathtimer.c_str();
+            txTextOut(130, 90, "Возвращение в меню через: ");
+            txTextOut(650, 90, char_deathtimer);
+            double_deathtimer -= 0.01;
+            if(double_deathtimer <= 0){
+                scene = 0;
+            }
+            txSleep(1);
         }
         }
     }
