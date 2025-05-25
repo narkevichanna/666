@@ -189,12 +189,6 @@ public:
         const char* char_cointimer = str_cointimer.c_str();
         txTextOut(130, 100, char_cointimer);
         //
-        ostringstream str3;
-        str3 << int_lifetimer;
-        string str_lifetimer = str3.str();
-        const char* char_lifetimer = str_lifetimer.c_str();
-        txTextOut(850, 55, char_lifetimer);
-        //
         for(int i = 0; i < 2; i ++){
             if (catch_coin[i]){
                 coin_timer[i] -= 1;
@@ -243,6 +237,15 @@ public:
             int_cointimer = 0;
             int_lifetimer = 3;
         }
+                txSetFillColor(TX_RED);
+                txRectangle(750, 25, 950, 65);
+                txSetFillColor(TX_GREEN);
+                txRectangle(750,25,int_lifetimer*66.66+750, 65);
+                ostringstream str3;
+        str3 << int_lifetimer;
+        string str_lifetimer = str3.str();
+        const char* char_lifetimer = str_lifetimer.c_str();
+        txTextOut(840, 23, char_lifetimer);
         txEnd();
         }
         if (scene == 2){
