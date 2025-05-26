@@ -2,6 +2,7 @@
 #include"TXLib.h"
 #include <string>
 #include <sstream>
+#include <cmath>
 using namespace std;
 class Menu {
 public:
@@ -46,8 +47,6 @@ public:
     txTextOut(10, 50, "Timer:");
     txSelectFont("Tines", 50);
     txTextOut(10, 100, "Coins:");
-    txSelectFont("Tines", 50);
-    txTextOut(800, 90, "Coins:");
     txSelectFont("Tines", 50);
     }
 
@@ -103,17 +102,30 @@ class Enemy{
 public:
     int x, y;
     int image_flag;
+    int speed;
     HDC image1 = txLoadImage("пр1.bmp");
-    Enemy (int x,int y){
+    HDC image2 = txLoadImage("пр2.bmp");
+    HDC image3 = txLoadImage("пр3.bmp");
+    Enemy (int x,int y, int image_flag, int speed){
     this ->x=x;
     this ->y =y;
+    this->image_flag = image_flag;
+    this->speed = speed;
     }
     void draw(){
-        txTransparentBlt(txDC(),x,y,0,0, image1 ,0,0, TX_WHITE);
+        if (image_flag == 1){
+            txTransparentBlt(txDC(),x,y,0,0, image2 ,0,0, TX_WHITE);
+        }
+        if (image_flag == 2){
+            txTransparentBlt(txDC(),x,y,0,0, image1 ,0,0, TX_WHITE);
+        }
+        if (image_flag == 3){
+            txTransparentBlt(txDC(),x,y,0,0, image3 ,0,0, TX_WHITE);
+        }
     }
 
     void moved(){
-        y -= 3;
+        y -= speed;
 
     }
 };
@@ -155,10 +167,13 @@ public:
     void run(){
     txCreateWindow(1000,900);
     for(int i = 0; i < 2; i++){
-        pro[i] = new Enemy ((rand() % (600- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i), (rand() % (1200 - 1100 + 1)+ 1100));
+        pro[i] = new Enemy (rand() % 400 + 200  + ((rand() % 150 + 100) *i), (rand() % 1300 + 1000) + i*20, rand() % 3 + 1, rand() % 6 + 3);
     }
+    if (abs(pro[1]->x - pro[0]->x) < 100){
+            pro[1]->x += 100;
+        }
      for (int i =0; i < 2; i++){
-        coin[i] = new Monetka ((rand() % (600- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i), (rand() % (600 - 50 + 1)+ 50));
+        coin[i] = new Monetka (rand() % 300 + 200 + ((rand() % 150 + 100)*i), rand() % 600 + 50);
         catch_coin[i] = false;
         coin_timer[i] = 300;
     }
@@ -203,15 +218,15 @@ public:
         for (int i = 0; i < 2; i++){
             coin[i]->draw();
             if ((coin[i]->x - (car.x+50))*(coin[i]->x - (car.x+50))+(coin[i]->y - (car.y+100))*(coin[i]->y - (car.y+100)) <= 12000){
-                    coin[i]->y = (rand() % (10000 - 1200 +1)+ 1200);
-                    coin[i]->x = (rand() % (400- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
+                    coin[i]->y = rand() % 10000 + 1200;
+                    coin[i]->x = rand() % 400 + 200 + ((rand() % 150 + 100)*i);
                     catch_coin[i] = true;
                     int_cointimer += 1;
             }
             if (catch_coin[i]){
                 if (coin_timer[i] == 0){
-                    coin[i]->y = (rand() % (600 - 50 +1)+ 50);
-                    coin[i]->x = (rand() % (400- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
+                    coin[i]->y = rand() % 600 + 50 ;
+                    coin[i]->x = rand() % 400 + 200 + ((rand() % 150 + 100)*i);
                     catch_coin[i] = false;
                     coin_timer[i] = 200;
                 }
@@ -222,13 +237,18 @@ public:
             pro[i]->moved();
 
             if(pro[i]->y <= -50){
-                pro[i]->y = (rand() % (1300 - 1000 +1)+ 1000);
-                pro[i]->x = (rand() % (500- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
+                pro[i]->y = (rand() % 1300 + 1000) + i*20;
+                pro[i]->x = rand() % 300 + 200  + ((rand() % 150 + 100) *i);
+                pro[i]->image_flag = rand() % 3 + 1;
+                pro[i]->speed = rand() % 6 + 3;
             }
             if(car.x >= pro[i]->x - 100 && car.x <= pro[i]->x + 100 && car.y <= pro[i]->y + 240 && car.y >= pro[i]->y - 240){
-                pro[i]->y = (rand() % (1300 - 1000 +1)+ 1000);
-                pro[i]->x = (rand() % (500- 200 + 1)+ 200) + ((rand() % (150 - 100 + 1) + 150)*i);
+                pro[i]->y = (rand() % 1300 + 1000) + i*20;
+                pro[i]->x = rand() % 300 + 200  + ((rand() % 150 + 100) *i);
                 int_lifetimer -= 1;
+                pro[i]->image_flag = rand() % 3 + 1;
+                pro[i]->speed = rand() % 6 + 3;
+
             }
         }
         if(int_lifetimer == 0){
