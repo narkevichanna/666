@@ -237,18 +237,33 @@ public:
             pro[i]->moved();
 
             if(pro[i]->y <= -50){
-                pro[i]->y = (rand() % 1300 + 1000) + i*20;
-                pro[i]->x = rand() % 300 + 200  + ((rand() % 150 + 100) *i);
-                pro[i]->image_flag = rand() % 3 + 1;
-                pro[i]->speed = rand() % 6 + 3;
+                if (i == 0){
+                    pro[0]->y = (rand() % 1300 + 1000) + i*20;
+                    pro[0]->x = rand() % 300 + 200  + ((rand() % 150 + 100) *i);
+                    pro[0]->image_flag = rand() % 3 + 1;
+                    pro[0]->speed = rand() % 6 + 3;
+                }
+                if (i == 1){
+                    pro[1]->y = (rand() % 1300 + 1000) + i*20;
+                    pro[1]->x = pro[0]->x  + ((rand() % 150 + 100) *i);
+                    pro[1]->image_flag = rand() % 3 + 1;
+                    pro[1]->speed = rand() % 6 + 3;
+                }
             }
             if(car.x >= pro[i]->x - 100 && car.x <= pro[i]->x + 100 && car.y <= pro[i]->y + 240 && car.y >= pro[i]->y - 240){
-                pro[i]->y = (rand() % 1300 + 1000) + i*20;
-                pro[i]->x = rand() % 300 + 200  + ((rand() % 150 + 100) *i);
+                if (i == 0){
+                    pro[0]->y = (rand() % 1300 + 1000) + i*20;
+                    pro[0]->x = rand() % 300 + 200  + ((rand() % 150 + 100) *i);
+                    pro[0]->image_flag = rand() % 3 + 1;
+                    pro[0]->speed = rand() % 6 + 3;
+                }
+                if (i == 1){
+                    pro[1]->y = (rand() % 1300 + 1000) + i*20;
+                    pro[1]->x = pro[0]->x  + 150;
+                    pro[1]->image_flag = rand() % 3 + 1;
+                    pro[1]->speed = rand() % 6 + 3;
+                }
                 int_lifetimer -= 1;
-                pro[i]->image_flag = rand() % 3 + 1;
-                pro[i]->speed = rand() % 6 + 3;
-
             }
         }
         if(int_lifetimer == 0){
@@ -281,6 +296,7 @@ public:
             double_deathtimer -= 0.01;
             if(double_deathtimer <= 0){
                 scene = 0;
+                double_deathtimer = 3;
             }
             txSleep(1);
         }
