@@ -149,6 +149,7 @@ public:
     double double_timer = 0;
     int int_timer;
     int int_cointimer = 0;
+    int coins = 0;
     int int_lifetimer = 3;
     Enemy *pro[2];
     bool catch_coin[2];
@@ -222,15 +223,22 @@ public:
                     coin[i]->x = rand() % 400 + 200 + ((rand() % 150 + 100)*i);
                     catch_coin[i] = true;
                     int_cointimer += 1;
+                    coins += 1;
             }
             if (catch_coin[i]){
                 if (coin_timer[i] == 0){
                     coin[i]->y = rand() % 600 + 50 ;
-                    coin[i]->x = rand() % 400 + 200 + ((rand() % 150 + 100)*i);
+                    coin[i]->x = rand() % 350 + 200 + ((rand() % 150 + 100)*i);
                     catch_coin[i] = false;
                     coin_timer[i] = 200;
                 }
             }
+        }
+        if (coins - 5 == 0){
+            if (int_lifetimer < 3){
+                int_lifetimer += 1;
+            }
+            coins = 0;
         }
         for(int i = 0; i < 2; i++){
             pro[i]->draw();
