@@ -1,0 +1,50 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\bin\Debug\game.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13721, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "destImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FD2FC (32-bit), Flags: Cmdre0, Thread: 0x1124 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at g:\codeblocks\mingw\include\txlib.h:13721:
+
+  13719:                HDC sourceImage, double xSource /*= 0*/, double ySource /*= 0*/, unsigned operation /*= SRCCOPY*/)
+  13720:     {
+=>13721: $1  if (_TX_HDC_FAILED (destImage))   return false;
+  13722: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13723: 
+
+# 1 in void Background::draw() at G:\game\game\main.cpp:10:
+
+      8:     HDC image = txLoadImage("img/bg.bmp");
+      9:     void draw(){
+=>   10:         txBitBlt(txDC(), 0, 0, 1000, 900, image, 0, 0);
+     11:     }
+     12: };
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 15 2025 23:16:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 15 2025 23:17:07
+
+Run file:	G:\game\game\bin\Debug\game.exe
+Directory:	G:\game\game
+
+--------------------------------------------------

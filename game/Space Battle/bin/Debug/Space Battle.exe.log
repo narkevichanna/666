@@ -1,0 +1,543 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRe0, Thread: 0xCC0 (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 20:58:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 20:58:44
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13274, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdrE0, Thread: 0x2A08 (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 20:59:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 20:59:58
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRe0, Thread: 0x33F8 (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:01:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:01:19
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRe0, Thread: 0x25A4 (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:02:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:03:07
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRe0, Thread: 0x7F8 (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:04:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:04:51
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRe0, Thread: 0x3564 (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:05:10, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:05:20
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13721, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "destImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x3274 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:06:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:07:01
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13274, функция: HBRUSH__* {anonymous}::TX::txSetFillColor(COLORREF, HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x938 (Main), GetLastError(): 6 (Неверный дескриптор). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:10:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:10:16
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13721, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "destImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x2B58 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:13:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:13:56
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13313, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x2690 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:15:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:15:28
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13721, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "destImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x17E8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:16:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:17:05
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13721, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "destImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x17E4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:18:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:18:33
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13313, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x3514 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:19:30, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:19:39
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13313, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x36EC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:23:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:23:25
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13721, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "destImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x3548 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:23:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:24:41
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13721, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "destImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x848 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:24:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 21:24:57
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\Space Battle\bin\Debug\Space Battle.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13313, функция: bool {anonymous}::TX::txClear(HDC),
+
+Сообщение: Окно рисования не создано или не в порядке.
+Если вы указали параметр "dc", то он неверен.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdrE0, Thread: 0x334C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 30 2025 21:24:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	May 30 2025 22:13:47
+
+Run file:	G:\game\Space Battle\bin\Debug\Space Battle.exe
+Directory:	G:\game\Space Battle
+
+--------------------------------------------------

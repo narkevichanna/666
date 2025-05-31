@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>game build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>16-05-2025 at 00:07.11</u><br />
+Build ended on: <u>16-05-2025 at 00:07.17</u><p />
+<b>-------------- Build: Debug in game (compiler: Use it for projects       = MinGW GCC + Strict)---------------</b><br />
+g++.exe  -c G:\game\game\main.cpp -o obj\Debug\main.o -Wall -fexceptions  -g  -Wall -Wextra -Weffc++ -Wcast-align -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wfloat-equal -Wformat-security -Wformat=2 -Wignored-qualifiers -Winit-self -Winline -Wlogical-op -Wmain -Wmissing-declarations -Wno-missing-field-initializers -Wmissing-include-dirs -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wredundant-decls -Wshadow -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wswitch-default -Wswitch-enum -Wtype-limits -Wundef -Wunreachable-code -Wwrite-strings -g -fexceptions -pipe -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC<br />
+G:\game\game\main.cpp: In constructor 'Enemy::Enemy(int, int)':<br />
+<font color="#0000ff">G:\game\game\main.cpp:17:24: warning: declaration of 'y' shadows a member of 'this' [-Wshadow]</font><br />
+     Enemy (int x,int y){<br />
+                        ^<br />
+<font color="#0000ff">G:\game\game\main.cpp:17:24: warning: declaration of 'x' shadows a member of 'this' [-Wshadow]</font><br />
+<font color="#0000ff">G:\game\game\main.cpp:17:5: warning: 'Enemy::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+     Enemy (int x,int y){<br />
+     ^<br />
+<font color="#0000ff">G:\game\game\main.cpp:17:5: warning: 'Enemy::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+G:\game\game\main.cpp: In constructor 'Bullet::Bullet(int, int)':<br />
+<font color="#0000ff">G:\game\game\main.cpp:32:25: warning: declaration of 'y' shadows a member of 'this' [-Wshadow]</font><br />
+     Bullet (int x,int y){<br />
+                         ^<br />
+<font color="#0000ff">G:\game\game\main.cpp:32:25: warning: declaration of 'x' shadows a member of 'this' [-Wshadow]</font><br />
+<font color="#0000ff">G:\game\game\main.cpp:32:5: warning: 'Bullet::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+     Bullet (int x,int y){<br />
+     ^<br />
+<font color="#0000ff">G:\game\game\main.cpp:32:5: warning: 'Bullet::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+G:\game\game\main.cpp: In constructor 'Pers::Pers(int, int)':<br />
+<font color="#0000ff">G:\game\game\main.cpp:47:23: warning: declaration of 'y' shadows a member of 'this' [-Wshadow]</font><br />
+     Pers (int x,int y){<br />
+                       ^<br />
+<font color="#0000ff">G:\game\game\main.cpp:47:23: warning: declaration of 'x' shadows a member of 'this' [-Wshadow]</font><br />
+<font color="#0000ff">G:\game\game\main.cpp:47:5: warning: 'Pers::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+     Pers (int x,int y){<br />
+     ^<br />
+<font color="#0000ff">G:\game\game\main.cpp:47:5: warning: 'Pers::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+G:\game\game\main.cpp: In constructor 'Game::Game()':<br />
+<font color="#0000ff">G:\game\game\main.cpp:70:7: warning: 'Game::bg' should be initialized in the member initialization list [-Weffc++]</font><br />
+ class Game {<br />
+       ^<br />
+G:\game\game\main.cpp: In function 'int main()':<br />
+G:\game\game\main.cpp:123:10: note: synthesized method 'Game::Game()' first required here <br />
+     Game game;<br />
+          ^<br />
+g++.exe  -o bin\Debug\game.exe obj\Debug\main.o<br />
+Output size is 2,12 MB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 6 seconds)</font><br />
+<font color="#0000ff">0 errors, 13 warnings (0 minutes, 6 seconds)</font><br />
+</tt>
+</body>
+</html>

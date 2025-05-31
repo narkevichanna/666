@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1748622286 source:g:\game\space battle\main.cpp
+	<iostream>
+	"TXLib.h"
+	<string>
+	<sstream>
+

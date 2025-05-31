@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Space Battle" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Space Battle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="G:/libs/SFML-2.4.0/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add directory="G:/libs/SFML-2.4.0/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Space Battle" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="G:/libs/SFML-2.4.0/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add directory="G:/libs/SFML-2.4.0/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="G:/libs/SFML-2.4.0/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics-s" />
+			<Add library="sfml-window-s" />
+			<Add library="sfml-system-s" />
+			<Add library="opengl32" />
+			<Add library="freetype" />
+			<Add library="jpeg" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="G:/libs/SFML-2.4.0/lib" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

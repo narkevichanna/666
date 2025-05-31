@@ -1,0 +1,584 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448ED0. Попытка прочесть данные по адресу NULL в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x22F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Enemy::draw() at G:\game\game\main.cpp:22:
+
+     20:     }
+     21:     void draw(){
+=>   22:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     23:     }
+     24:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:33:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:33:16
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448ED0. Попытка прочесть данные по адресу NULL в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x22F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Enemy::draw() at G:\game\game\main.cpp:22:
+
+     20:     }
+     21:     void draw(){
+=>   22:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     23:     }
+     24:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:33:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:33:16
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448ED0. Попытка прочесть данные по адресу NULL в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x164 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Enemy::draw() at G:\game\game\main.cpp:22:
+
+     20:     }
+     21:     void draw(){
+=>   22:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     23:     }
+     24:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:34:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:34:55
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448ED0. Попытка прочесть данные по адресу NULL в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x164 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Enemy::draw() at G:\game\game\main.cpp:22:
+
+     20:     }
+     21:     void draw(){
+=>   22:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     23:     }
+     24:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:34:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:34:55
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448EA4. Попытка прочесть данные по адресу 0x00000001 в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x3F1C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Bullet::draw() at G:\game\game\main.cpp:37:
+
+     35:     }
+     36:     void draw(){
+=>   37:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     38:     }
+     39:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:35:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:36:03
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448EA4. Попытка прочесть данные по адресу 0x00000001 в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x3F1C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Bullet::draw() at G:\game\game\main.cpp:37:
+
+     35:     }
+     36:     void draw(){
+=>   37:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     38:     }
+     39:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:35:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:36:03
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448E63. Попытка прочесть данные по адресу 0x00000001 в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x3BC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Bullet::draw() at G:\game\game\main.cpp:37:
+
+     35:     }
+     36:     void draw(){
+=>   37:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     38:     }
+     39:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:38:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:38:42
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00448E63. Попытка прочесть данные по адресу 0x00000001 в модуле G:\game\game\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FE2FC (32-bit), Flags: CMdRe0, Thread: 0x3BC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in void Bullet::draw() at G:\game\game\main.cpp:37:
+
+     35:     }
+     36:     void draw(){
+=>   37:         txTransparentBlt(txDC(),x,y,0,0, image ,0,0, TX_WHITE);
+     38:     }
+     39:     void moved(){
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 16 2025 00:38:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 16 2025 00:38:42
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13722, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x004FF2FC (32-bit), Flags: CMdRe0, Thread: 0x34E4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at g:\codeblocks\mingw\include\txlib.h:13722:
+
+  13720:     {
+  13721: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13722: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13723: 
+  13724: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in void Menu::draw() at G:\game\game\main.cpp:17:
+
+     15:     HDC image = txLoadImage("img/menu_bg.bmp");
+     16:     void draw(){
+=>   17:         txBitBlt(txDC(), 0, 0, 0, 0, image, 0, 0);
+     18:         txSetFillColor(TX_WHITE);
+     19:         txRectangle(450, 640, 750, 715);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 25 2025 18:05:25, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 25 2025 18:05:34
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0050B2FC (32-bit), Flags: CMdRe0, Thread: 0x3DB0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at g:\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Menu::draw() at G:\game\game\main.cpp:21:
+
+     19:         txSetFillColor(TX_GREY);
+     20:         //txRectangle(470, 650, 730, 710);
+=>   21:         txTransparentBlt(txDC(), 470, 625, 0, 0, image2, 0, 0, TX_WHITE);
+     22:         txSetColor(TX_BLACK);
+     23:         //txTextOut(550, 650, "PLAY");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 27 2025 23:10:20, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 27 2025 23:10:28
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0050B2FC (32-bit), Flags: CMdRe0, Thread: 0x1D80 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 28 2025 21:22:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 28 2025 21:23:00
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0050B2FC (32-bit), Flags: CMdRe0, Thread: 0x18FC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 28 2025 21:22:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 28 2025 21:24:16
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: G:\game\game\main.exe, файл: g:\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0050B2FC (32-bit), Flags: CMdRe0, Thread: 0x3500 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at g:\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Menu::draw() at G:\game\game\main.cpp:23:
+
+     21:         //txRectangle(470, 650, 730, 710);
+     22:         txTransparentBlt(txDC(), 470, 625, 0, 0, image2, 0, 0, TX_WHITE);
+=>   23:         txTransparentBlt(txDC(), 470, 745, 0, 0, image3, 0, 0, TX_WHITE);
+     24:         txSetColor(TX_BLACK);
+     25:         //txTextOut(550, 650, "PLAY");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	g:\codeblocks\mingw\include\txlib.h
+Compiled:	May 29 2025 23:27:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	May 29 2025 23:28:04
+
+Run file:	G:\game\game\main.exe
+Directory:	G:\game\game
+
+--------------------------------------------------
